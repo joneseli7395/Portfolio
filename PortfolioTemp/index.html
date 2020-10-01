@@ -133,7 +133,7 @@
 
                 <div class="section-title">
                     <h2>Facts</h2>
-                    <p>Don't worry, these are placeholders. I know they are bleh.</p>
+                    <p>Don't worry, these are placeholders. I know they are rather bleh.</p>
                 </div>
 
                 <div class="row no-gutters">
@@ -180,7 +180,7 @@
 
                 <div class="section-title">
                     <h2>Skills</h2>
-                    <p>These will be gone soon.</p>
+                    <p>These will be gone soon, but I thought I'd have some fun.</p>
                 </div>
 
                 <div class="row skills-content">
@@ -243,7 +243,7 @@
 
                 <div class="row">
                     <div class="col-lg-6" data-aos="fade-up">
-                        <h3 class="resume-title">Sumary</h3>
+                        <h3 class="resume-title">Summary</h3>
                         <div class="resume-item pb-0">
                             <h4>Eli Jones</h4>
                             <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
@@ -296,7 +296,7 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Portfolio</h2>
+                    <h2>Projects</h2>
                     <p>More placeholders until I have projects.</p>
                 </div>
 
@@ -383,7 +383,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card"> 
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
                             <img src="Img/moira.png" class="img-fluid" alt="">
                             <div class="portfolio-links">
@@ -457,7 +457,7 @@
 
                 <div class="section-title">
                     <h2>Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>I would love to further discuss my experience and skills with you. Please feel free to contact me by email or phone.</p>
                 </div>
 
                 <div class="row" data-aos="fade-in">
@@ -516,10 +516,12 @@
                             </div>
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
-                                <div class="error-message"></div>
+                                <!--<div class="error-message"></div>-->
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center">
+                                <button id="button" type="submit">Send Message</button>
+                            </div>
                         </form>
                     </div>
 
@@ -562,6 +564,44 @@
 
     <!-- Template Main JS File -->
     <script src="Scripts/main.js"></script>
+
+    <!--EmailJS Tags-->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('user_ajuUnKWeBLumXDMuiYhbp')
+    </script>
+
+    <script>
+        const btn = document.getElementById('button');
+
+        document.querySelector('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_axlh1qi';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        Swal.fire(
+                            "Good news!",
+                            'Your email has been sent!',
+                            'success'
+                        );
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
+    </script>
 
 </body>
 
