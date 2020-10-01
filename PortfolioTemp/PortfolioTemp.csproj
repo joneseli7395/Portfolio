@@ -79,11 +79,11 @@
     <Content Include="Img\favicon-16x16.png" />
     <Content Include="Img\favicon-32x32.png" />
     <Content Include="Img\favicon.ico" />
+    <Content Include="Img\genji.png" />
     <Content Include="Img\moira.png" />
     <Content Include="Img\portbg.jpg" />
     <Content Include="Img\tex.png" />
     <Content Include="Img\torb.png" />
-    <Content Include="Img\widow.png" />
     <Content Include="Img\winston.png" />
     <Content Include="Img\zarya.png" />
     <Content Include="Img\zen.png" />
