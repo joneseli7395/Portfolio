@@ -512,7 +512,7 @@
                                 <div class="loading">Loading</div>
                             </div>
                             <div class="text-center">
-                                <button id="contact-submit" type="submit">Send Message</button>
+                                <button id="button" type="submit">Send Message</button>
                             </div>
                         </form>
 
@@ -578,38 +578,29 @@
     </script>
 
     <script>
-        const btn = document.getElementById('contact-submit');
+        const btn = document.getElementById('button');
 
         document.querySelector('form')
             .addEventListener('submit', function (event) {
                 event.preventDefault();
-                let name = document.getElementById("name").value;
-                let subject = document.getElementById("subject").value;
-                let message = document.getElementById("message").value;
-                let email = document.getElementById("email").value;
-                if (name.length < 4 || subject.length < 8 || message === "" || !email.includes("@", ".")) {
-                    return;
-                } else {
 
+                btn.value = 'Sending...';
 
-                    btn.value = 'Sending...';
+                const serviceID = 'default_service';
+                const templateID = 'template_axlh1qi';
 
-                    const serviceID = 'default_service';
-                    const templateID = 'template_axlh1qi';
-
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = 'Send Email';
-                            Swal.fire(
-                                'Good news!',
-                                'Your was email sent!',
-                                'success'
-                            );
-                        }, (err) => {
-                            btn.value = 'Send Email';
-                            alert(JSON.stringify(err));
-                        });
-                }
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        Swal.fire(
+                            'Good News!',
+                            'Your message was sent!',
+                            'success'
+                        );
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
             });
     </script>
 
