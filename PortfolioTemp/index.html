@@ -583,35 +583,25 @@
         document.querySelector('form')
             .addEventListener('submit', function (event) {
                 event.preventDefault();
-                let name = document.getElementById("name").value;
-                let email = document.getElementById("email");
-                let subject = document.getElementById("subject").value;
-                let message = document.getElementById("message").value;
-                if (name.lengt < 4 || email.includes("@", ".") || subject.length < 8 || message === "") {
-                    return
-                } else {
 
-                    btn.value = 'Sending...';
+                btn.value = 'Sending...';
 
-                    const serviceID = 'default_service';
-                    const templateID = 'template_axlh1qi';
+                const serviceID = 'default_service';
+                const templateID = 'template_axlh1qi';
 
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = 'Send Email';
-                            Swal.fire(
-                                'Good News!',
-                                'Your message was sent!',
-                                'success'
-                            );
-                        }, (err) => {
-                            btn.value = 'Send Email';
-                            alert(JSON.stringify(err));
-                        });
-                }
-            }
-
-
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        Swal.fire(
+                            'Good News!',
+                            'Your message was sent!',
+                            'success'
+                        );
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+            });
     </script>
 
 </body>
