@@ -583,6 +583,11 @@
         document.querySelector('form')
             .addEventListener('submit', function (event) {
                 event.preventDefault();
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email");
+                let subject = document.getElementById("subject").value;
+                let message = document.getElementById("message").value;
+                if (name.lengt < 4 || email.includes("@",".") || subject.length < 8 || message === "")
 
                 btn.value = 'Sending...';
 
