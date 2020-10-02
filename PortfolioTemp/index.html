@@ -600,7 +600,12 @@
                     emailjs.sendForm(serviceID, templateID, this)
                         .then(() => {
                             btn.value = 'Send Email';
-                            alert('Sent!');
+                            Swal.fire(
+                                'Good news!',
+                                'Your was email sent!',
+                                'success'
+
+                            );
                         }, (err) => {
                             btn.value = 'Send Email';
                             alert(JSON.stringify(err));
