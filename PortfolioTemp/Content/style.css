@@ -116,9 +116,9 @@ h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
         }
 
-        #profilepic {
-            filter:blur(5px)
-        }
+#profilepic {
+    filter: blur(5px)
+}
 
 #main {
     margin-left: 300px;
@@ -369,32 +369,32 @@ section {
             color: #1f5297;
         }
 
-.skills .count-box span {
-    font-size: 48px;
-    line-height: 40px;
-    display: block;
-    font-weight: 700;
-    color: #050d18;
-    margin-left: 60px;
-}
+        .skills .count-box span {
+            font-size: 48px;
+            line-height: 40px;
+            display: block;
+            font-weight: 700;
+            color: #050d18;
+            margin-left: 60px;
+        }
 
-.skills .count-box p {
-    padding: 15px 0 0 0;
-    margin: 0 0 0 60px;
-    font-family: "Raleway", sans-serif;
-    font-size: 14px;
-    color: #122f57;
-}
+        .skills .count-box p {
+            padding: 15px 0 0 0;
+            margin: 0 0 0 60px;
+            font-family: "Raleway", sans-serif;
+            font-size: 14px;
+            color: #122f57;
+        }
 
-.skills .count-box a {
-    font-weight: 600;
-    display: block;
-    margin-top: 20px;
-    color: #122f57;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    transition: ease-in-out 0.3s;
-}
+        .skills .count-box a {
+            font-weight: 600;
+            display: block;
+            margin-top: 20px;
+            color: #122f57;
+            font-size: 15px;
+            font-family: "Poppins", sans-serif;
+            transition: ease-in-out 0.3s;
+        }
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -561,9 +561,9 @@ section {
         bottom: 0;
     }
 
---------------------------------------------------------------
+/*--------------------------------------------------------------
 # Services
---------------------------------------------------------------
+--------------------------------------------------------------*/
 .services .icon-box {
     margin-bottom: 20px;
 }
@@ -800,7 +800,7 @@ section {
 }
 
 #recap {
-    padding-top:10px
+    padding-top: 10px
 }
 
 /*--------------------------------------------------------------
@@ -971,7 +971,7 @@ section {
         padding-right: 20px 15px;
     }
 }
-           
+
 #bottom-social {
     font-size: 40px;
     text-align: center;
@@ -980,7 +980,7 @@ section {
 
 #git {
     color: #173b6c;
-    padding-left:15px
+    padding-left: 15px
 }
 
 #twit {
@@ -997,4 +997,3 @@ section {
     color: #173b6c;
     padding-left: 15px
 }
-

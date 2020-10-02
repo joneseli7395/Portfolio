@@ -76,6 +76,7 @@
     <Content Include="Content\devicon-colors.css" />
     <Content Include="Content\devicon.min.css" />
     <Content Include="Content\fonts\devicon.svg" />
+    <Content Include="Content\style1.css" />
     <Content Include="Img\android-chrome-192x192.png" />
     <Content Include="Img\android-chrome-512x512.png" />
     <Content Include="Img\bugtrack.jpg" />
@@ -84,7 +85,7 @@
     <Content Include="Img\favicon-32x32.png" />
     <Content Include="Img\favicon.ico" />
     <Content Include="Img\portbg.jpg" />
-    <Content Include="Img\Resumė %281%29.jpeg" />
+    <Content Include="Img\Resumė%281%29.jpeg" />
     <Content Include="Scripts\email.js" />
     <Content Include="fonts\boxicons.svg" />
     <Content Include="Img\favicon.png" />
