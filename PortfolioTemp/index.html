@@ -510,7 +510,6 @@
                             </div>
                             <div class="mb-3">
                                 <div class="loading">Loading</div>
-                                <!--<div class="error-message"></div>-->
                             </div>
                             <div class="text-center">
                                 <button id="button" type="submit">Send Message</button>
@@ -540,6 +539,13 @@
             </div>
         </div>
     </footer><!-- End  Footer -->
+
+    <div class="social-links mt-3 text-center" id="bottom-social">
+        <a target="_blank" href="https://github.com/joneseli7395" class="github"><i class="bx bxl-github"></i></a>
+        <a target="_blank" href="https://twitter.com/joneseli7395" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/eli-jones-8896a519b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a target="_blank" href="https://medium.com/@joneseli7395" class="medium"><i class="bx bxl-medium"></i></a>
+    </div>
 
     <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -572,29 +578,34 @@
     </script>
 
     <script>
-        const btn = document.getElementById('button');
+        const btn = document.getElementById('contact-submit');
 
         document.querySelector('form')
             .addEventListener('submit', function (event) {
                 event.preventDefault();
+                let name = document.getElementById("name").value;
+                let subject = document.getElementById("subject").value;
+                let message = document.getElementById("message").value;
+                let email = document.getElementById("email").value;
+                if (name.length < 4 || subject.length < 8 || message === "" || !email.includes("@", ".")) {
+                    return;
+                } else {
 
-                btn.value = 'Sending...';
 
-                const serviceID = 'default_service';
-                const templateID = 'template_axlh1qi';
+                    btn.value = 'Sending...';
 
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-                        Swal.fire(
-                            "Thank you!",
-                            'Your email has been sent!',
-                            'success'
-                        );
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-                    });
+                    const serviceID = 'default_service';
+                    const templateID = 'template_tupwqif';
+
+                    emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            btn.value = 'Send Email';
+                            alert('Sent!');
+                        }, (err) => {
+                            btn.value = 'Send Email';
+                            alert(JSON.stringify(err));
+                        });
+                }
             });
     </script>
 
