@@ -78,6 +78,8 @@
     <Content Include="Content\fonts\devicon.svg" />
     <Content Include="Img\android-chrome-192x192.png" />
     <Content Include="Img\android-chrome-512x512.png" />
+    <Content Include="Img\bugtrack.jpg" />
+    <Content Include="Img\crop.jpg" />
     <Content Include="Img\favicon-16x16.png" />
     <Content Include="Img\favicon-32x32.png" />
     <Content Include="Img\favicon.ico" />
