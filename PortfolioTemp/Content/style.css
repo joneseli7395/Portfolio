@@ -1053,10 +1053,10 @@ section {
     overflow: hidden;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+/*article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
-
+*/
 .portfolio .portfolio-wrap::before {
     content: "";
     background: rgba(0, 0, 0, 0.15);
