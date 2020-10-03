@@ -275,212 +275,421 @@
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Projects</h2> <!--Projects-->
-                    <p> Active links will be added when available.</p>
+                    <h2>Projects</h2>
+                    <p>This collection of projects showcases my knowledge and application of different language to produce practical solutions to real-world problems. Clicking an icon will show you the language and technologies used to build that project.</p>
                 </div>
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div id="error-tracker" class="portfolio-wrap project-card" data-toggle="modal" data-target="#bugTrack">
+                            <img src="Img/bug-tracker.png" class="project-img mx-auto" />
                             <div class="portfolio-links">
-                                <!--<a href="#" type="button" data-toggle="modal" data-target="#bugTrack" data-gall="portfolioGallery" class="venobox" title="Bug Tracker"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#bugTrack"><i class="bx bx-plus"></i></button>
-                                <a title="Bug Tracker"><i class="bx bx-link"></i></a>
+                                <p class="h4">Bug Tracker</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-2.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#easy-money-modal">
+                            <img src="Img/finance-mvc.png" class="project-img mx-auto" />
                             <div class="portfolio-links">
-                                <!--<a href="Img/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Financial Portal(MVC)"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#fpMVC"><i class="bx bx-plus"></i></button>
-                                <a title="Financial Portal(MVC)"><i class="bx bx-link"></i></a>
+                                <p class="h4">Saving Money</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-3.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#finance-api-modal">
+                            <img src="Img/finance-api.png" />
                             <div class="portfolio-links">
-                                <!--<a href="Img/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="Financial Portal(API)"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#fpAPI"><i class="bx bx-plus"></i></button>
-                                <a title="Financial Portal(API)"><i class="bx bx-link"></i></a>
+                                <p class="h4">Saving Money 2.0</p>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#blog-modal">
+                            <img src="Img/blog-item.png" class="project-img mx-auto" />
+                            <div class="portfolio-links">
+                                <p class="h4">Blog</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
+
             </div>
         </section>
         <!--Project Modals-->
-
+        <!-- Start Bug Tracker Modal -->
         <div class="modal" id="bugTrack">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
                         <h4 class="modal-title">Bug Tracker</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about the Bug Tracker application</p>
-                        <button>Go to the Project</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/bug-tracker.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This site will track your web development process from planning, through development, and finally the product.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS, C#, SQL, .NET</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Take a Look</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="fpMVC">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- End Bug Tracker Modal -->
+        <!-- Start Finance Portal Modal -->
+        <div class="modal" id="easy-money-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
-                        <h4 class="modal-title">Financial Portal (MVC)</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Easy Money</h4>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about the Financial Portal</p>
-                        <button>Go to the Project</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/finance-mvc.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a great tool to track your finances, create a budge, and build your wealth.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS, C#, SQL, .NET</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Take a Look</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="fpAPI">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- End Error Tracker Modal -->
+        <!-- Start Blog Modal -->
+        <div class="modal" id="blog-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
-                        <h4 class="modal-title">Financial Portal (API)</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Blog</h4>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about the Financial Portal and how it differs from the previous</p>
-                        <button>Go to the Project</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/blog-item.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            A blog I built from scratch and use regularly.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS, C#, SQL, .NET</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Visit Blog</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Blog Modal -->
+        <!-- Start Finance Modal -->
+        <div class="modal" id="finance-api-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
 
-        <section id="challenges" class="portfolio section-bg">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Finance API</h4>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/finance-api.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a financial end-point API which can be called from another website.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS, C#, SQL, .NET</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Take a Look</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Finance Modal -->
+        <!--End Project Modals-->
+        <!--Challenges-->
+        <!-- Start Coding Challenges Section -->
+        <section id="challenges" class="portfolio challenges">
             <div class="container">
 
                 <div class="section-title">
-                    <h2>Challenges</h2> <!--Challenges-->
-                    <p>Active links will be added when available.</p>
+                    <h2>Coding Challenges</h2>
+                    <p>
+                        This is a collection of coding challenges that I have been tasked with at Coder Foundry. Each performs unique functions. Click the icons to read more.
+                    </p>
                 </div>
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-6.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#fizz-buzz-modal">
+                            <img src="Img/fizzbuzz.png" class="img-fluid" />
                             <div class="portfolio-links">
-                                <!--<a href="Img/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="FizzBuzz"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#fizz"><i class="bx bx-plus"></i></button>
-                                <a title="FizzBuzz"><i class="bx bx-link"></i></a>
+                                <p class="h4" id="challenges-text">Fizz Buzz</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-4.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#sunset-hills-modal">
+                            <img src="Img/sunset-hills.png" />
                             <div class="portfolio-links">
-                                <!--<a href="Img/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Sunset Hills"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#sunset"><i class="bx bx-plus"></i></button>
-                                <a title="Sunset Hills"><i class="bx bx-link"></i></a>
+                                <p class="h4" id="challenges-text">Sunset Hills</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="Img/portfolio-5.jpg" class="img-fluid" alt="">
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#tacocat-modal">
+                            <img src="Img/taco-cat.png" />
                             <div class="portfolio-links">
-                                <!--<a href="Img/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="TacocaT"><i class="bx bx-plus"></i></a>-->
-                                <button type="button" class="btn btn-dark" data-toggle="modal" data-gall="portfolioGallery" data-target="#taco"><i class="bx bx-plus"></i></button>
-                                <a title="TacocaT"><i class="bx bx-link"></i></a>
+                                <h4 class="h4" id="challenges-text">TacocaT </h4>
                             </div>
                         </div>
                     </div>
 
+                    <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap project-card" data-toggle="modal" data-target="#sum-of-all-fears-modal">
+                            <img src="Img/sum.png" />
+                            <div class="portfolio-links">
+                                <p class="h4" id="challenges-text">Sum of All Fears</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!--Challenges Modals-->
-
-
-        <div class="modal" id="fizz">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- Start fizz-buzz-modal -->
+        <div class="modal" id="fizz-buzz-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
-                        <h4 class="modal-title">FizzBuzz</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Fizz Buzz</h4>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about FizzBuzz</p>
-                        <button>Go to the Challenge</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/fizzbuzz.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a stand-alone website to show case my fizz-buzz coding skills.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Crack It Open</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="sunset">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- End fizz-buzz-modal -->
+        <!-- Start sunset-hills-modal -->
+        <div class="modal" id="sunset-hills-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
                         <h4 class="modal-title">Sunset Hills</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about Sunset Hills</p>
-                        <button>Go to the Challenge</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/sunset-hills.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a stand-alone website to show case my sunset hills skills.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">See the View</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="modal" id="taco">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
+        <!-- End sunset-hills-modal -->
+        <!-- Start tacocat-modal -->
+        <div class="modal" id="tacocat-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
-                    <div class="modal-header">
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
                         <h4 class="modal-title">TacocaT</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
                     <div class="modal-body">
-                        <p>A brief description about TacocaT (Taco Cat?)</p>
-                        <button>Go to the Challenge</button>
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/taco-cat.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a stand-alone website to show case my palindrom-checking skills.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Have a Taco</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End tacocat-modal -->
+        <!-- Start sum-of-all-fears-modal -->
+        <div class="modal" id="sum-of-all-fears-modal">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title">Sum of All Fears</h4>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row project-modal">
+                                <div class="col-3">
+                                    <img src="Img/sum.png" />
+                                </div>
+                                <div class="col">
+                                    <div class="row project-description">
+                                        <p>
+                                            This is a stand-alone website to show case sum of all fears coding skills.
+                                        </p>
+                                    </div>
+                                    <div class="row project-technologies">
+                                        <b>Technologies Used:</b><pre> HTML5, CSS, JS</pre>
+                                    </div>
+                                    <div class="row project-links">
+                                        <div class="col text-right">
+                                            <a class="btn btn-dark" href="#projects">Boo!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End sum-of-all-fears-modal -->
 
         <section id="blog" class="portfolio section-bg">
             <div class="container">
@@ -535,13 +744,13 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
+                    <!--Modal Header-->
                     <div class="modal-header">
                         <h4 class="modal-title">Blog Post #1</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
+                    <!--Modal body-->
                     <div class="modal-body">
                         <p>A brief description about what this blog post covers</p>
                         <button>Go to Post</button>
@@ -554,13 +763,13 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
+                    <!--Modal Header-->
                     <div class="modal-header">
                         <h4 class="modal-title">Blog Post #2</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
+                    <!--Modal body-->
                     <div class="modal-body">
                         <p>A brief description about what this blog post covers</p>
                         <button>Go to Post</button>
@@ -573,13 +782,13 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
 
-                     <!--Modal Header--> 
+                    <!--Modal Header-->
                     <div class="modal-header">
                         <h4 class="modal-title">Blog Post #3</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                     <!--Modal body--> 
+                    <!--Modal body-->
                     <div class="modal-body">
                         <p>A brief description about what this blog post covers</p>
                         <button>Go to Post</button>
