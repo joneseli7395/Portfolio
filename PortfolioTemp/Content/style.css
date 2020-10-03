@@ -1058,10 +1058,14 @@ p {
     color: gray;
 }
 
-.h4, h4 {
+.h4 {
     font-size: 1.5rem;
     color: #149ddd;
     font-weight:bold
+}
+
+h4 {
+    font-size:1.5rem
 }
 
 img {
