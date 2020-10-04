@@ -76,7 +76,6 @@
     <Content Include="Content\devicon-colors.css" />
     <Content Include="Content\devicon.min.css" />
     <Content Include="Content\fonts\devicon.svg" />
-    <Content Include="Content\style1.css" />
     <Content Include="Img\android-chrome-192x192.png" />
     <Content Include="Img\android-chrome-512x512.png" />
     <Content Include="Img\blog-item.png" />
