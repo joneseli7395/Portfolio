@@ -79,6 +79,8 @@
     <Content Include="Img\android-chrome-192x192.png" />
     <Content Include="Img\android-chrome-512x512.png" />
     <Content Include="Img\blog-item.png" />
+    <Content Include="Img\bootstrap-1.png" />
+    <Content Include="Img\bootstrap-2.png" />
     <Content Include="Img\bug-tracker.png" />
     <Content Include="Img\favicon-16x16.png" />
     <Content Include="Img\favicon-32x32.png" />
@@ -86,6 +88,7 @@
     <Content Include="Img\finance-api.png" />
     <Content Include="Img\finance-mvc.png" />
     <Content Include="Img\fizzbuzz.png" />
+    <Content Include="Img\html-1.png" />
     <Content Include="Img\portbg.jpg" />
     <Content Include="Img\Resumė%281%29.jpeg" />
     <Content Include="Img\sum.png" />
