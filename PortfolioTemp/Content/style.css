@@ -1106,3 +1106,7 @@ element.style {
     padding: 1.25rem;
     color: black
 }
+
+.swal-overlay {
+    background-color:dimgray
+}
