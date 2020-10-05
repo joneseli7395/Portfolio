@@ -81,8 +81,10 @@
     <Content Include="Img\blog-card.png" />
     <Content Include="Img\bootstrap-1.png" />
     <Content Include="Img\bootstrap-2.png" />
+    <Content Include="Img\bootstrap-grid.png" />
     <Content Include="Img\bug-tracker.png" />
     <Content Include="Img\bug-tracker1.png" />
+    <Content Include="Img\devices-blog.png" />
     <Content Include="Img\favicon-16x16.png" />
     <Content Include="Img\favicon-32x32.png" />
     <Content Include="Img\favicon.ico" />
