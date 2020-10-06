@@ -381,7 +381,7 @@
                                 <div class="col">
                                     <div class="row project-description">
                                         <p>
-                                            This is a useful tool to track your finances, create a budget, and grow your wealth. Designed with businesses in mind. 
+                                            This is a useful tool to track your finances, create a budget, and grow your wealth. Designed with businesses in mind.
                                         </p>
                                     </div>
                                     <div class="row project-technologies">
@@ -788,8 +788,8 @@
                                 <div class="validate"></div>
                             </div>
                             <!--<div class="mb-3">
-                            <div class="loading">Loading</div>
-                        </div>-->
+                                <div class="loading">Loading</div>
+                            </div>-->
                             <div class="text-center">
                                 <button id="form-submit" type="submit">Send Message</button>
                                 <div class="validate"></div>
@@ -811,6 +811,73 @@
         </div>
 
     </main><!-- End #main -->
+
+    <!--<section>--> <!--Example JS Code-->
+        <!--<div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <button onclick="doSomeMath()">Click</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    The result of doSomeMath is: <span id="result1"></span>
+                </div>
+            </div>
+
+
+            <div class="row text-center">
+                <div class="col">
+                    <button onclick="doMoreMatch(10, 36)">Click</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    The result of doSomeMath is: <span id="result2"></span>
+                </div>
+            </div>-->
+
+            <!--User Input-->
+            <!--<div class="row text-center">
+                <div class="col">
+                    <input type="text" id="userNum1" />
+                </div>
+                <div class="col">
+                    <input type="text" id="userNum2" />
+                </div>
+                <div class="col">
+                    <button onclick="addUserNumbersV1()">Click</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    The result of doSomeMath is: <span id="result3"></span>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col">
+                    <input type="text" id="userNum1" />
+                </div>
+                <div class="col">
+                    <input type="text" id="userNum2" />
+                </div>
+                <div class="col">
+                    <button onclick="addUserNumbersV2()">Click</button>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    The result of doSomeMath is: <span id="result3"></span>
+                </div>
+            </div>
+
+        </div>
+    </section>-->
+
+
+
+
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="container">
@@ -887,11 +954,56 @@
                         );
                     }, (err) => {
                         btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
+                        Swal.fire(
+                            'Oh no!',
+                            'An error occured!',
+                            'error'
+                         );
                     });
-
             });
     </script>
+
+        <!--Initial JS Code Sample-->
+    <!--<script>
+        //Let's learn how to add two nums
+        //function doSomeMath() {
+        //    let int1 = 4
+        //    let int2 = 6
+        //    return int1 + int2;
+        //}
+
+        function doSomeMath() {
+            let int1 = 4;
+            let int2 = 6;
+            let result = int1 + int2;
+            let spanEl = document.getElementById("result1");
+            spanEl.innerHTML = `<b>${result}</b>`;
+        }
+
+        function doMoreMatch(num1, num2) {
+            let result = num1 + num2  //intermediate variable, do not need. Start with for debugging, but cleaner without
+            let spanEl = document.getElementById("result2");
+            spanEl.innerHTML = `<b>${result}</b>`;
+        }
+
+        function addUserNumbersV1() {
+            //How do I get value of input 1?
+
+            let userNum1 = document.getElementById("userNum1")
+            let userNum2 = document.getElementById("userNum2")
+
+            let spanEl = document.getElementById("result3");
+            spanEl.innerHTML = `<b>${Number(userNum1.value) + Number(userNum2.value)}</b>`;
+        }
+
+        function addUserNumbersV2() {
+            let result = num1 + num2;
+            let spanEl = document.getElementById("result4");
+            spanEl.innerHTML = `<b>${result}</b>`;
+        }
+
+
+    </script>-->
 
 </body>
 
