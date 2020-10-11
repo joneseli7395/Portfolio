@@ -10,6 +10,6 @@ To showcase my front end ability, the contact submission form uses **EmailJS** r
 All emails come to me from **EmailJS** with the sender's name and email address, and are filtered their own folder. This elimnates any chance of submissions being filtered as junk mail. While this was the best option for me, please be sure to include the **correct name and email** in the form section.
 
 ***Note:***
-The telephone number provided is interactive. If you are on mobile, or your current device is linked to your phone via a linking app, then simply click the number and it will populate in your phone app, ready to be called. 
+- The telephone number provided is interactive. If you are on mobile, or your current device is linked to your phone via a linking app, then simply click the number and it will populate in your phone app, ready to be called. 
 
-If you encounter any unlisted issues, please use the contact form to alert me. 
+***If you encounter any unlisted issues, please use the contact form to alert me.*** 
