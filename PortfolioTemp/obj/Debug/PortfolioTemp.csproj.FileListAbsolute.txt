@@ -52,8 +52,8 @@ C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\bin\roslyn\VBCSCompiler.
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.csprojAssemblyReference.cache
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.csproj.CoreCompileInputs.cache
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.csproj.CopyComplete
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.dll
 C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.pdb
+C:\Users\13369\source\repos\PortfolioTemp\PortfolioTemp\obj\Debug\PortfolioTemp.csprojAssemblyReference.cache
