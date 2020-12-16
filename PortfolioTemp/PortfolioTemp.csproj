@@ -107,6 +107,7 @@
     <Content Include="Img\neticon.png" />
     <Content Include="Img\portbg.jpg" />
     <Content Include="Img\profile-pic.JPG" />
+    <Content Include="Img\resumeimg.png" />
     <Content Include="Img\Resumė%281%29.jpeg" />
     <Content Include="Img\sqlicon.png" />
     <Content Include="Img\sum-of-all.png" />
@@ -155,6 +156,7 @@
     <Content Include="Content\fonts\devicon.eot" />
     <Content Include="Content\fonts\devicon.ttf" />
     <Content Include="Content\fonts\devicon.woff" />
+    <Content Include="Img\Eli Jones Resume.pdf" />
     <None Include="packages.config" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\typed.min.js.map" />
