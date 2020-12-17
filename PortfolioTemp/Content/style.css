@@ -26,8 +26,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
+ol {
+    font-weight: bolder;
+}
+
+    ol li span {
+        font-weight: normal;
+    }
+
 .project-card {
-    border-radius: 25px 25px 25px 25px; 
+    border-radius: 25px 25px 25px 25px;
 }
 
 .blog-card {
@@ -1116,5 +1124,5 @@ element.style {
 }
 
 .swal-overlay {
-    background-color:dimgray
+    background-color: dimgray
 }
