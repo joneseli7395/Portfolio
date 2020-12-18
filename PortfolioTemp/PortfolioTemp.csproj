@@ -78,6 +78,7 @@
     <Content Include="Content\fonts\devicon.svg" />
     <Content Include="Img\android-chrome-192x192.png" />
     <Content Include="Img\android-chrome-512x512.png" />
+    <Content Include="Img\Apiimg-PixTeller.png" />
     <Content Include="Img\blog-card.png" />
     <Content Include="Img\blogImg.png" />
     <Content Include="Img\bootstrap-1.png" />
