@@ -50,17 +50,8 @@
     <header id="header">
         <div class="d-flex flex-column">
 
-            <div class="profile">
-                <img src="Img/profile-pic.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 class="text-light"><a href="index.html">Eli Jones</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a target="_blank" href="https://github.com/joneseli7395" class="github"><i class="bx bxl-github"></i></a>
-                    <a target="_blank" href="https://twitter.com/joneseli7395" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/eli-jones-8896a519b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                </div>
-            </div>
 
-            <nav class="nav-menu">
+            <nav class="nav-menu mt-5">
                 <ul>
                     <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
                     <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
@@ -72,6 +63,15 @@
 
                 </ul>
             </nav><!-- .nav-menu -->
+            <div class="profile">
+                <!--<img src="Img/profile-pic.jpg" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Eli Jones</a></h1>-->
+                <div class="social-links mt-3 text-center">
+                    <a target="_blank" href="https://github.com/joneseli7395" class="github"><i class="bx bxl-github"></i></a>
+                    <a target="_blank" href="https://twitter.com/joneseli7395" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/eli-jones-8896a519b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+            </div>
             <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
         </div>
@@ -89,17 +89,12 @@
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
             <div class="container">
-
-                <div class="section-title" data-aos="fade-left">
-                    <h2>About</h2>
-                    <p>
-                        Hello! Thanks for taking the time to visit my page. Stay a while, look around and learn about me. If you have any questions, you may use any of the provided contact methods to reach me.
-                    </p>
-                </div><br />
-
+                <br />
                 <div class="row">
                     <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Full Stack Developer</h3>
+                        <div class="section-title">
+                            <h2 style="font-size:38px">Full Stack Developer</h2>
+                        </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
@@ -203,38 +198,37 @@
         <!-- ======= Resume Section ======= -->
         <section id="resume" class="resume">
             <div class="container">
-
-                <div class="section-title">
-                    <h2>Resumė</h2>
-                    <p>Get to know me a little more, on a professional level.</p>
-                </div>
-
                 <div class="row">
-                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-                        <h3 class="resume-title">Professional Experience</h3>
-                        <div class="resume-item">
-                            <h4>Full Stack Software Developer - .NET</h4>
-                            <h6><b>Coder Foundry</b></h6>
-                            <p><em>Kernersville, NC</em></p>
-                            <h6><b>September 2020 - December 2020</b></h6>
-                            <hr />
-                            <h6><b>Created three primary projects, including:</b></h6>
-                            <ul>
-                                <li>A portfolio and blog site using C#, MVC, HTML5, CSS3, Bootstrap, JS & jQuery.</li>
-                                <li>
-                                    A Financial Portal implemented in <b>two</b> phases:
-                                    <ol>
-                                        <li>
-                                            <span>An MVC Web Application.</span>
-                                        </li>
-                                        <li>
-                                            <span>An API Web Service that utilizes Swagger and Swashbuckle for integrated testing.</span>
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li>Fully designed and developed a multi-functional issue tracker web application, implementing enhanced roles & security, including a Code-First relational database designed and modeled in PostgreSQL.</li>
-                            </ul>
-                            <p><em>Technologies used include: .Net Core v3.1, MVC6, C#, LINQ, PostgreSQL, Entity Framework, Docker, PgAdmin, Heroku and jQuery DataTables.</em></p>
+                    <div class="section-title pb-0">
+                        <h2>Resumė</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="resume-title">Professional Experience</h3>
+                            <div class="resume-item">
+                                <h4>Full Stack Software Developer - .NET</h4>
+                                <h6><b>Coder Foundry</b></h6>
+                                <p><em>Kernersville, NC</em></p>
+                                <h6><b>September 2020 - December 2020</b></h6>
+                                <hr />
+                                <h6><b>Created three primary projects, including:</b></h6>
+                                <ul>
+                                    <li>A portfolio and blog site using C#, MVC, HTML5, CSS3, Bootstrap, JS & jQuery.</li>
+                                    <li>
+                                        A Financial Portal implemented in <b>two</b> phases:
+                                        <ol>
+                                            <li>
+                                                <span>An MVC Web Application.</span>
+                                            </li>
+                                            <li>
+                                                <span>An API Web Service that utilizes Swagger and Swashbuckle for integrated testing.</span>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>Fully designed and developed a multi-functional issue tracker web application, implementing enhanced roles & security, including a Code-First relational database designed and modeled in PostgreSQL.</li>
+                                </ul>
+                                <p><em>Technologies used include: .Net Core v3.1, MVC6, C#, LINQ, PostgreSQL, Entity Framework, Docker, PgAdmin, Heroku and jQuery DataTables.</em></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,7 +241,7 @@
                 </button>
 
                 <!-- The Modal -->
-                <div class="modal" id="myModal">
+                <div class="modal" id="myModal" style="border-radius:45px 45px 45px 45px">
                     <div class="modal modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
                         <div class="modal-content">
 
